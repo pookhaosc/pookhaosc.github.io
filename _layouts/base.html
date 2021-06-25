@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} – Pookhao S C</title>
+    {% if page.title %}<title>{{ page.title }} – Pookhao S C</title>{% else %}
+    <title>Pookhao S C</title>{% endif %}
     <link rel="stylesheet" href={{ "/assets/bulma.css" }}>
     <link rel="stylesheet" href={{ "/assets/cobblestone.css" }}>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,6 +22,16 @@
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a href="{{ site.baseurl }}/thresholds/" class="navbar-item">Photography</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <!--  -->
+                </div>
+            </div>
         </div>
     </nav>
 
