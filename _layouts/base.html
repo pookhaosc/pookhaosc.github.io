@@ -1,13 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>{{ page.title }} – Pookhao S C</title>
     <link rel="stylesheet" href={{ "/assets/bulma.css" }}>
+    <link rel="stylesheet" href={{ "/assets/cobblestone.css" }}>
 </head>
 
 <body>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="{{ site.url }}" class="navbar-item">
+                <span class="subtitle is-5">Pookhao Chinpongsuwan</span>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    </nav>
+
     {{content}}
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Copyright &copy; 2021 Pookhao Chinpongsuwan
+            </p>
+        </div>
+    </footer>
+
+    
 </body>
 </html>
