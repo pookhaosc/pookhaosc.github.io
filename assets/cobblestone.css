@@ -14,7 +14,7 @@ footer{
 }
 
 .dropcap {
-    color: hsl(0, 0%, 48%);
+    /* color: hsl(0, 0%, 48%); */
     float: left;
     font-size: 86px;
     line-height: 60px;
